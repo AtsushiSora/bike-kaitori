@@ -44,7 +44,7 @@ const bikes: Bike[] = [
 
 const steps = [
   ["01", "査定を申し込む", "WEBまたは電話で、30秒で完了。"],
-  ["02", "バイクを見せる", "ご自宅へ無料出張。店頭査定もOK。"],
+  ["02", "バイクを見せる", "広島・山口のご自宅へ無料出張。店頭査定もOK。"],
   ["03", "金額を確認する", "査定根拠も明確に。お断りも気兼ねなく。"],
   ["04", "買取・お支払い", "面倒な手続きを代行し、すぐにお支払い。"],
 ];
@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <main>
       <div className="top-strip">
-        <span>関東全域・出張査定無料</span>
+        <span>広島県・山口県全域　出張査定無料</span>
         <span className="strip-divider" />
         <span>年中無休 9:00–20:00</span>
       </div>

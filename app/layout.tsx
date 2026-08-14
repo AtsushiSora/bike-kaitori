@@ -11,11 +11,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL(origin),
     title: "MOTO LOOP | バイク買取・中古バイク販売",
-    description: "バイク専門の無料出張査定と、整備・保証付き中古バイク販売。愛車の価値を、次のライダーへ。",
+    description: "広島県・山口県全域対応。バイク専門の無料出張査定と、整備・保証付き中古バイク販売。愛車の価値を、次のライダーへ。",
     icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
     openGraph: {
       title: "MOTO LOOP | 愛車の価値を、次のライダーへ。",
-      description: "バイク専門の無料出張査定と、整備・保証付き中古バイク販売。",
+      description: "広島県・山口県全域対応。バイク専門の無料出張査定と中古バイク販売。",
       type: "website",
       locale: "ja_JP",
       images: [{ url: `${origin}/og.png`, width: 1792, height: 933, alt: "MOTO LOOP" }],
