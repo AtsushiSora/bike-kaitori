@@ -198,16 +198,37 @@ export default function Home() {
           <div className="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
             <button className="modal-close" onClick={closeModal} aria-label="閉じる">×</button>
             {sent ? (
-              <div className="success"><span>✓</span><p className="eyebrow">THANK YOU</p><h2>査定のご依頼を<br />受け付けました。</h2><p>担当者より営業時間内にご連絡します。</p><button className="button button-dark" onClick={closeModal}>閉じる</button></div>
+              <div className="success"><span>✓</span><p className="eyebrow">FORM CHECK</p><h2>フォームの動作を<br />確認できました。</h2><p>現在は準備中のため、入力内容は送信・保存されていません。<br />受取先を決めた後に接続します。</p><button className="button button-dark" onClick={closeModal}>閉じる</button></div>
             ) : (
-              <><p className="eyebrow"><span /> FREE ASSESSMENT</p><h2 id="modal-title">かんたん無料査定</h2><p className="modal-lead">わかる範囲だけでOKです。</p>
+              <><p className="eyebrow"><span /> FREE ASSESSMENT</p><h2 id="modal-title">かんたん無料査定</h2><p className="modal-lead">必須項目だけで申し込みできます。年式や走行距離は、わかる範囲で大丈夫です。</p>
               <form className="assessment-form" onSubmit={submitAssessment}>
-                <label>メーカー<span>必須</span><select required defaultValue=""><option value="" disabled>選択してください</option><option>Honda</option><option>Yamaha</option><option>Kawasaki</option><option>Suzuki</option><option>輸入車・その他</option></select></label>
-                <label>車種名<span>必須</span><input required placeholder="例：CB400 SUPER FOUR" /></label>
-                <div className="form-row"><label>年式<input placeholder="例：2020年" /></label><label>走行距離<input placeholder="例：12,000km" /></label></div>
-                <label>お電話番号<span>必須</span><input required inputMode="tel" placeholder="090-0000-0000" /></label>
-                <button className="button button-yellow" type="submit">査定を依頼する <span>→</span></button>
-                <small>ご入力いただいた情報は査定対応のみに利用します。</small>
+                <div className="form-section-title"><span>01</span>バイクについて</div>
+                <div className="form-row">
+                  <label>メーカー<span>必須</span><select name="maker" required defaultValue=""><option value="" disabled>選択してください</option><option>Honda</option><option>Yamaha</option><option>Kawasaki</option><option>Suzuki</option><option>Harley-Davidson</option><option>BMW</option><option>Ducati</option><option>輸入車・その他</option></select></label>
+                  <label>車種名<span>必須</span><input name="model" required placeholder="例：CB400 SUPER FOUR" /></label>
+                </div>
+                <div className="form-row form-row-three">
+                  <label>年式<input name="year" inputMode="numeric" placeholder="例：2020年" /></label>
+                  <label>排気量<input name="displacement" inputMode="numeric" placeholder="例：400cc" /></label>
+                  <label>走行距離<input name="mileage" inputMode="numeric" placeholder="例：12,000km" /></label>
+                </div>
+                <label>バイクの状態・ご要望<textarea name="message" rows={3} placeholder="例：車検は来年3月まで。カスタム箇所があります。" /></label>
+
+                <div className="form-section-title"><span>02</span>お客様について</div>
+                <label>お名前<span>必須</span><input name="name" required autoComplete="name" placeholder="例：山田 太郎" /></label>
+                <div className="form-row">
+                  <label>お住まいの県<span>必須</span><select name="prefecture" required defaultValue=""><option value="" disabled>選択してください</option><option>広島県</option><option>山口県</option></select></label>
+                  <label>市区町村<span>必須</span><input name="city" required autoComplete="address-level2" placeholder="例：広島市中区" /></label>
+                </div>
+                <div className="form-row">
+                  <label>お電話番号<span>必須</span><input name="phone" required type="tel" inputMode="tel" autoComplete="tel" placeholder="090-0000-0000" /></label>
+                  <label>メールアドレス<input name="email" type="email" inputMode="email" autoComplete="email" placeholder="name@example.com" /></label>
+                </div>
+                <label>連絡の希望時間帯<select name="preferredTime" defaultValue=""><option value="">指定なし</option><option>9:00〜12:00</option><option>12:00〜15:00</option><option>15:00〜18:00</option><option>18:00〜20:00</option></select></label>
+                <label className="consent-check"><input name="privacyConsent" type="checkbox" required /><span>必須</span><b>個人情報の取り扱いに同意する</b></label>
+                <p className="form-notice">現在はフォームの準備段階です。このボタンで入力確認はできますが、内容はまだ送信されません。</p>
+                <button className="button button-yellow" type="submit">入力内容を確認する <span>→</span></button>
+                <small>受取先を決めた後、メールまたはLINEと接続します。</small>
               </form></>
             )}
           </div>
