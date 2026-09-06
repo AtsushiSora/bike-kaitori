@@ -80,7 +80,7 @@ export default function PrivacyPage() {
       <section className="legal-hero">
         <p className="eyebrow"><span /> PRIVACY POLICY</p>
         <h1>プライバシー<br /><em>ポリシー</em></h1>
-        <p>MOTO LOOP（以下「当店」）は、お客様の個人情報を大切に取り扱い、関係法令と本ポリシーに従って適切に管理します。</p>
+        <p>MOTO LOOP（運営：オーダーオート、以下「当店」）は、お客様の個人情報を大切に取り扱い、関係法令と本ポリシーに従って適切に管理します。</p>
       </section>
 
       <div className="legal-layout">
@@ -89,7 +89,7 @@ export default function PrivacyPage() {
           <strong>制定日</strong>
           <p>2026年9月6日</p>
           <strong>運営者</strong>
-          <p>MOTO LOOP</p>
+          <p>オーダーオート</p>
         </aside>
         <article className="legal-content">
           {sections.map((section) => (
@@ -103,7 +103,7 @@ export default function PrivacyPage() {
             <h2>11. お問い合わせ窓口</h2>
             <p>個人情報の取り扱いに関するお問い合わせは、下記窓口へお願いします。</p>
             <dl>
-              <div><dt>窓口名</dt><dd>MOTO LOOP 個人情報お問い合わせ窓口</dd></div>
+              <div><dt>窓口名</dt><dd>オーダーオート 個人情報お問い合わせ窓口</dd></div>
               <div><dt>連絡先</dt><dd>準備中</dd></div>
             </dl>
           </section>

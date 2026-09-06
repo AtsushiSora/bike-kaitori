@@ -75,7 +75,7 @@ export default function Home() {
       <div className="top-strip">
         <span>広島県・山口県全域　出張査定無料</span>
         <span className="strip-divider" />
-        <span>年中無休 9:00–20:00</span>
+        <span>査定フォーム準備中</span>
       </div>
 
       <header className="site-header">
@@ -98,7 +98,6 @@ export default function Home() {
           <a href="#flow" onClick={() => setMenuOpen(false)}>買取の流れ</a>
         </nav>
         <div className="header-actions">
-          <a className="phone-link" href="tel:0120558190"><small>お電話でのご相談</small><strong>0120-558-190</strong></a>
           <button className="button button-dark" onClick={() => setModalOpen(true)}>無料査定をはじめる <span>↗</span></button>
         </div>
       </header>
@@ -115,11 +114,6 @@ export default function Home() {
               <span className="button-copy"><small>最短30秒・査定料無料</small><strong>WEBでかんたん査定</strong></span><span className="round-arrow">→</span>
             </button>
             <a className="button button-glass" href="#stock">販売車を見る <span>↓</span></a>
-          </div>
-          <div className="hero-trust">
-            <div><strong>10,000<small>台+</small></strong><span>累計買取実績</span></div>
-            <div><strong>4.8<small>/ 5</small></strong><span>お客様満足度</span></div>
-            <div><strong>0<small>円</small></strong><span>出張・査定料</span></div>
           </div>
         </div>
         <div className="scroll-hint"><span /> SCROLL</div>
@@ -191,7 +185,7 @@ export default function Home() {
         <button className="button button-yellow" onClick={() => setModalOpen(true)}><span className="button-copy"><small>最短30秒・査定料無料</small><strong>WEBでかんたん査定</strong></span><span className="round-arrow">→</span></button>
       </section>
 
-      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark"><i /><i /></span><span>MOTO <b>LOOP</b></span></a><div className="footer-links"><a href="#buy">買取査定</a><a href="#stock">販売車一覧</a><a href="#reason">選ばれる理由</a><a href="#flow">買取の流れ</a><a href="/privacy">プライバシーポリシー</a></div><p>古物商許可番号：東京都公安委員会 第000000000000号</p><small>© 2026 MOTO LOOP. ALL RIGHTS RESERVED.</small></footer>
+      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark"><i /><i /></span><span>MOTO <b>LOOP</b></span></a><div className="footer-links"><a href="#buy">買取査定</a><a href="#stock">販売車一覧</a><a href="#reason">選ばれる理由</a><a href="#flow">買取の流れ</a><a href="/privacy">プライバシーポリシー</a></div><p>運営：オーダーオート</p><small>© 2026 MOTO LOOP. ALL RIGHTS RESERVED.</small></footer>
 
       {modalOpen && (
         <div className="modal-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) closeModal(); }}>
