@@ -71,8 +71,8 @@ export default function PrivacyPage() {
     <main className="legal-page">
       <header className="legal-header">
         <a className="brand" href="/" aria-label="MOTO LOOP トップへ">
-          <span className="brand-mark"><i /><i /></span>
-          <span>MOTO <b>LOOP</b></span>
+          <img className="brand-mark" src="/logo-mark.svg" alt="" />
+          <span className="brand-copy"><span className="brand-name"><strong>MOTO</strong><b>LOOP</b></span><small>BIKE BUY &amp; SELL</small></span>
         </a>
         <a className="legal-back" href="/">トップへ戻る <span>→</span></a>
       </header>
@@ -118,7 +118,7 @@ export default function PrivacyPage() {
       </div>
 
       <footer className="legal-footer">
-        <a className="brand footer-brand" href="/"><span className="brand-mark"><i /><i /></span><span>MOTO <b>LOOP</b></span></a>
+        <a className="brand footer-brand" href="/"><img className="brand-mark" src="/logo-mark.svg" alt="" /><span className="brand-copy"><span className="brand-name"><strong>MOTO</strong><b>LOOP</b></span><small>BIKE BUY &amp; SELL</small></span></a>
         <small>© 2026 MOTO LOOP. ALL RIGHTS RESERVED.</small>
       </footer>
     </main>

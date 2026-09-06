@@ -31,6 +31,7 @@ function rewriteForProjectPage(html) {
     .replaceAll("url(/_next/", `url(${basePath}/_next/`)
     .replaceAll('href="/privacy"', `href="${basePath}/privacy"`)
     .replaceAll('href="/"', `href="${basePath}/"`)
+    .replaceAll(/(?<!\/bike-kaitori)\/logo-mark\.svg/g, `${basePath}/logo-mark.svg`)
     .replaceAll(/(?<!\/bike-kaitori)\/favicon\.svg/g, `${basePath}/favicon.svg`)
     .replaceAll('href="/og.png"', `href="${basePath}/og.png"`);
 }

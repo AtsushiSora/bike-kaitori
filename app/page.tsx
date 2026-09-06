@@ -80,8 +80,8 @@ export default function Home() {
 
       <header className="site-header">
         <a className="brand" href="#top" aria-label="MOTO LOOP トップへ">
-          <span className="brand-mark"><i /><i /></span>
-          <span>MOTO <b>LOOP</b></span>
+          <img className="brand-mark" src="/logo-mark.svg" alt="" />
+          <span className="brand-copy"><span className="brand-name"><strong>MOTO</strong><b>LOOP</b></span><small>BIKE BUY &amp; SELL</small></span>
         </a>
         <button
           className="menu-button"
@@ -187,7 +187,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <a className="brand footer-brand" href="#top"><span className="brand-mark"><i /><i /></span><span>MOTO <b>LOOP</b></span></a>
+        <a className="brand footer-brand" href="#top"><img className="brand-mark" src="/logo-mark.svg" alt="" /><span className="brand-copy"><span className="brand-name"><strong>MOTO</strong><b>LOOP</b></span><small>BIKE BUY &amp; SELL</small></span></a>
         <div className="footer-links"><a href="#buy">買取査定</a><a href="#stock">販売車一覧</a><a href="#reason">選ばれる理由</a><a href="#flow">買取の流れ</a><a href="/privacy">プライバシーポリシー</a></div>
         <div className="footer-company">
           <p><strong>運営：オーダーオート</strong>　事業者：空 篤志</p>
