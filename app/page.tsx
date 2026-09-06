@@ -191,7 +191,7 @@ export default function Home() {
         <button className="button button-yellow" onClick={() => setModalOpen(true)}><span className="button-copy"><small>最短30秒・査定料無料</small><strong>WEBでかんたん査定</strong></span><span className="round-arrow">→</span></button>
       </section>
 
-      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark"><i /><i /></span><span>MOTO <b>LOOP</b></span></a><div className="footer-links"><a href="#buy">買取査定</a><a href="#stock">販売車一覧</a><a href="#reason">選ばれる理由</a><a href="#flow">買取の流れ</a></div><p>古物商許可番号：東京都公安委員会 第000000000000号</p><small>© 2026 MOTO LOOP. ALL RIGHTS RESERVED.</small></footer>
+      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark"><i /><i /></span><span>MOTO <b>LOOP</b></span></a><div className="footer-links"><a href="#buy">買取査定</a><a href="#stock">販売車一覧</a><a href="#reason">選ばれる理由</a><a href="#flow">買取の流れ</a><a href="/privacy">プライバシーポリシー</a></div><p>古物商許可番号：東京都公安委員会 第000000000000号</p><small>© 2026 MOTO LOOP. ALL RIGHTS RESERVED.</small></footer>
 
       {modalOpen && (
         <div className="modal-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) closeModal(); }}>
@@ -225,7 +225,7 @@ export default function Home() {
                   <label>メールアドレス<input name="email" type="email" inputMode="email" autoComplete="email" placeholder="name@example.com" /></label>
                 </div>
                 <label>連絡の希望時間帯<select name="preferredTime" defaultValue=""><option value="">指定なし</option><option>9:00〜12:00</option><option>12:00〜15:00</option><option>15:00〜18:00</option><option>18:00〜20:00</option></select></label>
-                <label className="consent-check"><input name="privacyConsent" type="checkbox" required /><span>必須</span><b>個人情報の取り扱いに同意する</b></label>
+                <label className="consent-check"><input name="privacyConsent" type="checkbox" required /><span>必須</span><b><a href="/privacy" target="_blank" rel="noreferrer">プライバシーポリシー</a>に同意する</b></label>
                 <p className="form-notice">現在はフォームの準備段階です。このボタンで入力確認はできますが、内容はまだ送信されません。</p>
                 <button className="button button-yellow" type="submit">入力内容を確認する <span>→</span></button>
                 <small>受取先を決めた後、メールまたはLINEと接続します。</small>
