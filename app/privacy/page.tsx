@@ -90,6 +90,8 @@ export default function PrivacyPage() {
           <p>2026年9月6日</p>
           <strong>運営者</strong>
           <p>オーダーオート</p>
+          <strong>事業者</strong>
+          <p>空 篤志</p>
         </aside>
         <article className="legal-content">
           {sections.map((section) => (
@@ -104,7 +106,12 @@ export default function PrivacyPage() {
             <p>個人情報の取り扱いに関するお問い合わせは、下記窓口へお願いします。</p>
             <dl>
               <div><dt>窓口名</dt><dd>オーダーオート 個人情報お問い合わせ窓口</dd></div>
-              <div><dt>連絡先</dt><dd>準備中</dd></div>
+              <div><dt>事業者</dt><dd>空 篤志</dd></div>
+              <div><dt>営業所所在地</dt><dd>広島県広島市佐伯区皆賀一丁目10番20号</dd></div>
+              <div><dt>電話</dt><dd><a href="tel:07089966421">070-8996-6421</a></dd></div>
+              <div><dt>LINE</dt><dd><a href="https://line.me/R/ti/p/@774zckii" target="_blank" rel="noreferrer">@774zckii</a></dd></div>
+              <div><dt>メール</dt><dd><a href="mailto:info@order-auto.com">info@order-auto.com</a></dd></div>
+              <div><dt>古物商許可</dt><dd>広島県公安委員会 第731292600035号</dd></div>
             </dl>
           </section>
         </article>

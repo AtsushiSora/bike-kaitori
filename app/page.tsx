@@ -75,7 +75,7 @@ export default function Home() {
       <div className="top-strip">
         <span>広島県・山口県全域　出張査定無料</span>
         <span className="strip-divider" />
-        <span>査定フォーム準備中</span>
+        <span>LINE・メールは24時間受付</span>
       </div>
 
       <header className="site-header">
@@ -98,6 +98,7 @@ export default function Home() {
           <a href="#flow" onClick={() => setMenuOpen(false)}>買取の流れ</a>
         </nav>
         <div className="header-actions">
+          <a className="phone-link" href="tel:07089966421"><small>お電話でのご相談</small><strong>070-8996-6421</strong></a>
           <button className="button button-dark" onClick={() => setModalOpen(true)}>無料査定をはじめる <span>↗</span></button>
         </div>
       </header>
@@ -185,7 +186,17 @@ export default function Home() {
         <button className="button button-yellow" onClick={() => setModalOpen(true)}><span className="button-copy"><small>最短30秒・査定料無料</small><strong>WEBでかんたん査定</strong></span><span className="round-arrow">→</span></button>
       </section>
 
-      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark"><i /><i /></span><span>MOTO <b>LOOP</b></span></a><div className="footer-links"><a href="#buy">買取査定</a><a href="#stock">販売車一覧</a><a href="#reason">選ばれる理由</a><a href="#flow">買取の流れ</a><a href="/privacy">プライバシーポリシー</a></div><p>運営：オーダーオート</p><small>© 2026 MOTO LOOP. ALL RIGHTS RESERVED.</small></footer>
+      <footer>
+        <a className="brand footer-brand" href="#top"><span className="brand-mark"><i /><i /></span><span>MOTO <b>LOOP</b></span></a>
+        <div className="footer-links"><a href="#buy">買取査定</a><a href="#stock">販売車一覧</a><a href="#reason">選ばれる理由</a><a href="#flow">買取の流れ</a><a href="/privacy">プライバシーポリシー</a></div>
+        <div className="footer-company">
+          <p><strong>運営：オーダーオート</strong>　事業者：空 篤志</p>
+          <p>営業所：広島県広島市佐伯区皆賀一丁目10番20号</p>
+          <p>電話：<a href="tel:07089966421">070-8996-6421</a> ／ LINE：<a href="https://line.me/R/ti/p/@774zckii" target="_blank" rel="noreferrer">@774zckii</a> ／ メール：<a href="mailto:info@order-auto.com">info@order-auto.com</a></p>
+          <p>古物商許可：広島県公安委員会 第731292600035号</p>
+        </div>
+        <small>© 2026 MOTO LOOP. ALL RIGHTS RESERVED.</small>
+      </footer>
 
       {modalOpen && (
         <div className="modal-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) closeModal(); }}>
